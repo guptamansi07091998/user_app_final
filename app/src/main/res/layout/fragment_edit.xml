@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="edit1"
+            type="com.example.navigation.User_data"/>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edit"
+        tools:context=".edit">
+
+        <EditText
+            android:id="@+id/Name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="113dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="69dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+             />
+
+        <EditText
+            android:id="@+id/EmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="157dp"
+            android:layout_marginEnd="72dp"
+            android:ems="10"
+            android:hint="EmailId"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="251dp"
+            android:layout_marginEnd="70dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="339dp"
+            android:layout_marginEnd="72dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPostalAddress" />
+
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="434dp"
+
+            android:text="UPDATE" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="154dp"
+
+            android:backgroundTint="@color/cardview_light_background"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_mail_outline_24"
+            app:fabSize="normal"
+            app:layout_anchorGravity="end|bottom" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="65dp"
+
+            android:backgroundTint="@color/cardview_light_background"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_person_24"
+            app:fabSize="normal"
+            app:layout_anchorGravity="end|bottom" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="246dp"
+
+            android:backgroundTint="@color/cardview_light_background"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_phone_android_24"
+            app:fabSize="normal"
+            app:layout_anchorGravity="end|bottom" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="335dp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_home_24"
+            app:fabSize="normal"
+            app:layout_anchorGravity="end|bottom" />
+    </RelativeLayout>
+</layout>
