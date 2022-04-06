@@ -14,9 +14,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Observer
 import com.example.navigation.databinding.FragmentEditBinding
 import kotlinx.android.synthetic.main.fragment_edit.*
@@ -80,6 +82,13 @@ class edit : Fragment() {
 
                val sharedPreferences = activity?.getSharedPreferences("MySharedPref", 0)
                sharedPreferences?.edit()?.remove("number_extract")?.commit()
+           val fragment1: Fragment = home()
+           val fragmentManager1 = requireActivity().supportFragmentManager
+           val fragmentTransaction: FragmentTransaction = fragmentManager1.beginTransaction()
+           (context as AppCompatActivity).supportActionBar!!.title = "Home"
+           fragmentTransaction.replace(R.id.fragment_container, fragment1)
+           fragmentTransaction.addToBackStack(null)
+           fragmentTransaction.commit()
 
 
        }
