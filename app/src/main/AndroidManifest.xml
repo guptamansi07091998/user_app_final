@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.navigation">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,9 +15,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Navigation">
         <activity
-            android:name=".MainActivity" android:configChanges="orientation"
-            android:theme="@style/Theme.Navigation.NoActionBar"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.Navigation.NoActionBar" />
+        <activity
+            android:name=".splash"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:theme="@style/Theme.Navigation.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
